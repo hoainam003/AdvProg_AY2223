@@ -28,7 +28,7 @@ int getPlayerGuess() {
     // TODO: Ask the player guest and return the player's number
     int guessNumber;
     cin >> guessNumber;
-    return guess;
+    return guessNumber;
 }
 
 
@@ -83,7 +83,7 @@ bool checkContinuePlaying(char isContinued) {
     // TODO: return result after checking player continue playing or not
     bool result = false;
     if (isContinued == 'Y' || isContinued == 'y') {
-        result true;
+        result = true;
     }
     return result;
 }

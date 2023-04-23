@@ -47,19 +47,15 @@ string getAnswer(int number, int randomNumber) {
               If number is lower than randomNumber, the answer is "Your number is lower."
               If number is equal randomNumber, the answer is "Congratulation! You win."
     ***/
-    string answer;
-    if (number > randomNumber) {
-        answer = " Your number is higher." ;
-    }
-    else if (number < randomNumber) {
-         answer = "Your number is lower." ;
-    }
-    else {
-         answer = "Congratulation! You win." ;
-    }
+     string answer;
+    if (number > randomNumber)
+        answer = "Your number is higher.";
+    else if (number < randomNumber)
+        answer = "Your number is lower.";
+    else
+        answer = "Congratulation! You win.";
     return answer;
 }
-
 
 /***
     Args:

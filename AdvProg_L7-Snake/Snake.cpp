@@ -103,6 +103,7 @@ void Snake::slideTo(Position newPosition)
 		// move it to the head of the snake
         /* YOUR CODE HERE */
         oldTailNode -> position = newPosition;
+        head -> next = oldTailNode;
 		head = oldTailNode;
 	}
 }
@@ -161,7 +162,9 @@ void Snake::move(Direction direction)
     // If gameOver, return ;
     /* YOUR CODE HERE */
     if (game.isGameOver())
+    {
         return;
+    }
 
     // If cherry > 0, cherry descrease one and growAtFront() with newPosition
     if (cherry > 0) {
